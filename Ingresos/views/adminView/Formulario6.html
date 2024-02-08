@@ -1,0 +1,335 @@
+<div class="card">
+  <div class="card-header" style="background-color: #EFC714;" >
+    <div class="row p-2"><label><b> FORMULARIO SF.F.4.2</b></label></div>
+    <div class="row p-2" ><label id="nombre_3" style="text-align: center;"></label></div>
+    <div class="row">
+      <div class="form-group col-md-12 col-lg-6">
+        <label  id="label_independiente_empleado">Tipo de independiente</label>
+        <select class="form-control" id="independiente_empleado"></select>
+      </div>
+      <div class="form-group col-md-12 col-lg-6">
+        <label  id="label_tipoVisita">Tipo de visita </label>
+        <select  class="form-control" id="tipoVisita"></select>
+      </div>
+    </div>
+  </div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button class="nav-link button_class" id="linkA" onclick="ActiveMenu6('A')">Documento1</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="linkB" onclick="ActiveMenu6('B')">Documento 2</button>
+    </li>
+  </ul>
+  <div>
+    <div class="card-body" id="doc1">
+      <div class="form-container">
+        <div class="form-title">
+          <label class="Redondo bordes"><b>VISITA CABEZA DE HOGAR</b></label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_fecha_visita">Fecha de la visita</label>
+              <input type="date" class="form-control " id="fecha_visita"  maxlength="128" placeholder="" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_hora_visita">Hora : </label>
+              <input type="time" class="form-control " id="hora_visita" maxlength="128" placeholder="Hora" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_direcc_visita">Dirección : </label>
+              <input type="text"  id="direcc_visita" class="form-control" maxlength="128" placeholder="Dirección" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_actividad_desempeña">Oficio o actividad que desempeña: </label>
+              <input type="text" class="form-control" id="actividad_desempeña"  maxlength="128" placeholder="Oficio o actividad que desempeña" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_lugar_desempeña">Lugar: </label>
+              <input type="text" class="form-control" id="lugar_desempeña" maxlength="128" placeholder="Lugar" required>
+            </div>
+        </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_date_ingreso">Fecha de ingreso o tiempo en esta actividad : </label>
+              <input type="date" class="form-control" id="date_ingreso"  maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_cargo_id">Cargo: </label>
+              <input type="text" class="form-control " id="cargo_id" maxlength="128" placeholder="Cargo" required>
+            </div>
+        </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_Salario_id">Salario o Ingresos mensuales aprox.$: </label>
+              <input type="text" class="form-control" id="Salario_id" name="Salario_id" maxlength="128" placeholder="Salario" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4" disabled>
+              <label  id="label_Sisben_id">Sisben: </label>
+              <input type="text" class="form-control " id="Sisben_id" maxlength="128" placeholder="Sisben">
+            </div>
+            <div class="form-group col-md-12 col-lg-4" disabled>
+              <label  class="label_Categoria_id">Categoria: </label>
+              <input type="text" class="form-control" id="Categoria_id" maxlength="128" placeholder="Categoria" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_caja_compensa">Caja de compensación</label>
+              <input type="text" class="form-control" id="caja_compensa" name="caja_compensa" maxlength="128" placeholder="Caja de compensación" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_CualCaja">¿Cual? </label>
+              <input type="text" class="form-control" id="CualCaja" maxlength="128" placeholder="¿Cual?" required>
+            </div>
+           </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="personaAcargo" id="label_personaAcargo">Persona que lo atendió: </label>
+              <input type="text" class="form-control" id="personaAcargo" name="personaAcargo" maxlength="128" placeholder="Persona que lo atendió" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_Teléfono_personaAcargo">Teléfono:</label>
+              <input type="text" class="form-control" id="Teléfono_personaAcargo" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>  
+        </div>
+
+        <div class="form-title" id="cony_view">
+          <label class="Redondo bordes"><b>VISITA AL CÓNYUGE</b></label>
+        </div>
+        <div id="conyuge_view" class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-12">
+              <label  id="label_estado_cony">Estado del conyuge</label>
+              <select class="form-control" name="estado_cony" id="estado_cony">
+                <option value="1">Empleado</option>
+                <option value="2">Independiente</option>
+                <option value="3">Desempleado(a)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_date_visita_cony">Fecha de la visita</label>
+              <input type="date" class="form-control" id="date_visita_cony"  maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label id="label_hora_cony">Hora : </label>
+              <input type="time" class="form-control" id="hora_cony" maxlength="128" placeholder="Hora" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label id="label_direccio_cony">Dirección : </label>
+              <input type="text" class="form-control" id="direccio_cony" maxlength="128" placeholder="Dirección" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_oficio_cony">Oficio o actividad que desempeña: </label>
+              <input type="text" class="form-control" id="oficio_cony"  maxlength="128" placeholder="Oficio o actividad que desempeña" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_lugar_cony">Lugar: </label>
+              <input type="text" class="form-control" id="lugar_cony" maxlength="128" placeholder="Lugar" required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label  id="label_ingreso_cony">Fecha de ingreso o tiempo en esta actividad : </label>
+            <input type="date" class="form-control" id="ingreso_cony" name="ingreso_cony" maxlength="128" placeholder="Fecha" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label  id="label_cargo_cony">Cargo: </label>
+            <input type="text" class="form-control " id="cargo_cony" maxlength="128" placeholder="Cargo" required>
+          </div>
+      </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_salario_cony">Salario o Ingresos mensuales aprox.$: </label>
+              <input type="text" class="form-control " id="salario_cony"  maxlength="128" placeholder="Salario o Ingresos mensuales aprox" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_sisben_cony">Sisben: </label>
+              <input type="text" class="form-control " id="sisben_cony" maxlength="128" placeholder="Sisben" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_categoria_cony">Categoria: </label>
+              <input type="text" class="form-control " id="categoria_cony" maxlength="128" placeholder="Categoria" required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label  id="label_caja_compensa_cony">Caja de compensación</label>
+            <input type="text" class="form-control" id="caja_compensacony" name="caja_compensa" maxlength="128" placeholder="Caja de compensación" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label  id="label_CualCajacony">¿Cual? </label>
+            <input type="text" class="form-control" id="CualCajacony" maxlength="128" placeholder="¿Cual?" required>
+          </div>
+         </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_personaAcargo_cony">Persona que lo atendió: </label>
+              <input type="text" class="form-control " id="personaAcargo_cony" name="personaAcargo_cony" maxlength="128" placeholder="Persona que lo atendió" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label id="label_personaAcarTel_cony">Teléfono:</label>
+              <input type="text" class="form-control" id="personaAcarTel_cony" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_conceptoGe_cony"><b>Concepto General de la T.S </b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="conceptoGe_cony" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Llamadas -->
+  <div>
+    <div id="doc2" class="card-body d-none">
+      <div class="form-container">
+        <div class="form-title">
+          <label>Seguimiento posterior a la visita de la cabeza de hogar (Servicio Doméstico, mineros y obreros de la construcción)</label>
+          <label for="" class="Redondo bordes">Constancia de la primera llamada telefónica 15 días después de la visita al trabajo actual</label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_Fecha_id ">Fecha</label>
+              <input type="date" class="form-control " id="Fecha_idLla"  maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_hora_idLla">Hora</label>
+              <input type="time" class="form-control " id="hora_idLla" maxlength="128" placeholder="Hora" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_telefono_idLla">Teléfono</label>
+              <input type="text" class="form-control " id="telefono_idLla" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_nombre_atendioLla"><b>Nombre de la persona que atendió</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 justify-content-center">
+              <input type="text" class="form-control" id="nombre_atendioLla" maxlength="128" placeholder="Nombre" required>
+            </div>
+          </div> 
+        </div>
+        <div class="form-title">
+          <label for="" class="Redondo bordes">Constancia de la segunda llamada telefónica al trabajo actual 15 días después de la primera llamada</label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_fecha_segunda">Fecha</label>
+              <input type="date" class="form-control " id="fecha_segunda"  maxlength="128" placeholder="Nombre" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_Hora_segunda">Hora : </label>
+              <input type="time" class="form-control " id="Hora_segunda" maxlength="128" placeholder="Teléfono" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_telefono_segunda">Teléfono : </label>
+              <input type="text" class="form-control " id="telefono_segunda" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_nombre_atendio_segunda"><b>Nombre de la persona que atendió</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 justify-content-center">
+              <input type="text" class="form-control" id="nombre_atendio_segunda" maxlength="128" placeholder="Nombre" required>
+            </div>
+          </div> 
+        </div>
+        <div class="form-title">
+          <label><b>Nota:</b> Este ítem se debe diligenciar en caso de haber tenido un contrato laboral en una empresa antes de ser independiente</label>
+          <label for="" class="Redondo bordes">Constancia de llamada telefónica al trabajo anterior 15 días después de la visita</label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  class="label_fecha_tercera">Fecha</label>
+              <input type="date" class="form-control " id="fecha_tercera"  maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  class="label_hora_tercera">Hora</label>
+              <input type="time" class="form-control " id="hora_tercera" maxlength="128" placeholder="Hora" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_telefono_tercero">Teléfono : </label>
+              <input type="text" class="form-control " id="telefono_tercero" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_fecha_cuarto">Fecha de ingreso: </label>
+              <input type="date" class="form-control " id="fecha_cuarto" maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_fecha_cuarto1">Fecha del retiro: </label>
+              <input type="date" class="form-control " id="fecha_cuarto1" maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_salario_1">Salario </label>
+              <input type="text" class="form-control " id="salario_1" maxlength="128" placeholder="$" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-8">
+              <label  id="label_persona_atendio1">Nombre de la persona que atendió la llamada : </label>
+              <input type="text" class="form-control " id="persona_atendio1" maxlength="128" placeholder="Nombre de la persona" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  class="labelcargo_persona">Cargo: </label>
+              <input type="text" class="form-control " id="cargo_persona" maxlength="128" placeholder="Cargo" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_retiro_1"><b>Motivos del retiro</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 justify-content-center">
+              <input type="text" class="form-control" id="retiro_1" maxlength="128" placeholder="Motivos" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_comentariofin"><b>Comentarios de la persona que lo atendió</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="comentariofin" rows="4"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_conceptoGenera"><b>Concepto General de la CSF e inconsistencias</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="conceptoGenera" rows="4"></textarea>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted" style="background-color: #EFC714;">
+    <br>
+  </div>
+</div>

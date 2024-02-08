@@ -1,0 +1,282 @@
+<div class="card">
+  <div class="card-header" style="background-color: #EFC714;" >
+    <div class="row p-2"><label><b> FORMULARIO SF.F.4.2A</b></label></div>
+    <div class="row p-2" ><label id="nombre_" style="text-align: center;"></label></div>
+    <div class="row">
+      <div class="form-group col-md-12 col-lg-6">
+        <label  id="label_tipoVisita">Fecha de la visita </label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="form-group col-md-12 col-lg-6">
+        <label  id="label_tipoVisita">Tipo de visita </label>
+        <select name="tipoVisita" class="form-control" id="tipoVisita"></select>
+      </div>
+    </div>
+  </div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button class="nav-link" id="linkA" onclick="ActiveMenu6('A')">Documento1</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="linkB" onclick="ActiveMenu6('B')">Documento 2</button>
+    </li>
+  </ul>
+  <div id="doc1">
+    <div class="card-body" id="tableA2">
+      <div class="form-container">
+        <div class="form-title">
+          <label class="Redondo bordes"><b>Nota:</b> Esta visita se realizará a las cabezas de hogar que están afiliadas a una caja de compensación diferente a Comfaboy</label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-8">
+              <label  id="label_nombre_ca">Nombre de la cabeza de hogar :</label>
+              <input type="text" class="form-control" id="nombre_ca" maxlength="128" placeholder="Nombre" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_edad_ca">Edad : </label>
+              <input type="number" class="form-control" id="edad_ca" maxlength="128" placeholder="Edad" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-8">
+              <label  class="label_nombreEmpresa">Nombre de la empresa:</label>
+              <input type="text" class="form-control" id="nombreEmpresa"  maxlength="128" placeholder="Nombre de la empresa" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_DirecciónEmpresa">Dirección : </label>
+              <input type="text" class="form-control" id="DireccionEmpresa" maxlength="128" placeholder="Dirección" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_telefonoEmpres">Telefono: </label>
+              <input type="text" class="form-control" id="telefonoEmpres"  maxlength="128" placeholder="Telefono" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  class="label_actividadEmpre">Actividad: </label>
+              <input type="text" class="form-control" id="actividadEmpre" maxlength="128" placeholder="Actividad" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label id="label_num_empleados">N°. Aprox de empleados: </label>
+              <input type="number" class="form-control" id="num_empleados" maxlength="128" placeholder="N°. Aprox" required>
+            </div>
+        </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-12">
+              <label  id="label_personaAten">Persona que atendió en R.H: </label>
+              <input type="text" class="form-control" id="personaAten"  maxlength="128" placeholder="" required>
+            </div>
+        </div>
+        <br>
+        </div>
+        <div class="form-title">
+          <label class="Redondo bordes"><b>DOCUMENTOS QUE REVISÓ</b></label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label id="label_contrato">Contrato</label>
+              <input type="text" class="form-control" id="contrato" maxlength="128" placeholder="Contrato" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  class="label_date_start">Fecha de iniciación :</label>
+              <input type="date" class="form-control" id="date_start" maxlength="128" placeholder="" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_salario_empr">Salario :</label>
+              <input type="date" class="form-control " id="salario_empr" maxlength="128" placeholder="" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-8">
+              <label  id="label_cargo_em ">Cargo del solicitante :</label>
+              <input type="text" class="form-control " id="cargo_em"  maxlength="128" placeholder="Nombre de la empresa" required>
+            </div>
+            <br>
+            <div class="form-group col-md-12 col-lg-4 d-flex justify-content-center align-items-center" style="margin-top: 13px;">
+              <label id="label_despreNo"><b>DESPRENDIBLES DE PAGO</b>&nbsp;&nbsp; </label>
+              <div>
+                <input type="radio" class="btn-check "  id="despreSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="despreSi">SI</label>
+                <input type="radio" class="btn-check "  id="despreNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="despreNo">NO</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6" disabled>
+              <label  id="label_Sisben_id1">Sisben: </label>
+              <input type="text" class="form-control " id="Sisben_id1" maxlength="128" placeholder="Sisben">
+            </div>
+            <div class="form-group col-md-12 col-lg-6" disabled>
+              <label  class="label_Categoria_id">Categoria: </label>
+              <input type="text" class="form-control" id="Categoria_id" maxlength="128" placeholder="Categoria" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_caja_compensa">Caja de compensación</label>
+              <input type="text" class="form-control" id="caja_compensa"  maxlength="128" placeholder="Caja de compensación" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_CualCaja">¿Cual? </label>
+              <input type="text" class="form-control" id="CualCaja" maxlength="128" placeholder="¿Cual?" required>
+            </div>
+           </div>
+           <br>
+           <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_retiro_1"><b>Entrevista con el solicitante: Actividad que estaba realizando en ese momento </b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 justify-content-center">
+              <textarea class="form-control margin" id="comentariofin" rows="4"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_comentariofin2"><b>Concepto de la T.S e inconsistencias</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="comentariofin2" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Llamadas -->
+  <div class="d-none" id="doc2">
+    <div class="card-body" id="tableA2">
+      <div class="form-container">
+        <div class="form-title">
+          <label class="Redondo bordes"><b>VISITA AL CÓNYUGE</b></label>
+        </div>
+        <div id="conyuge" class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-3">
+              <label  id="label_tipoVisita1">Tipo de visita </label>
+              <select class="form-control" id="tipoVisita1"></select>
+            </div>
+            <div class="form-group col-md-12 col-lg-3">
+              <label  id="label_date_visit">Fecha de la visita</label>
+              <input type="date" class="form-control " id="date_visit"  maxlength="128" placeholder="Nombre" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-3">
+              <label  id="label_hora_visit">Hora : </label>
+              <input type="time" class="form-control " id="hora_visit" maxlength="128" placeholder="Teléfono" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-3">
+              <label  id="label_dire_visi">Dirección : </label>
+              <input type="text" class="form-control " id="dire_visi" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-12">
+              <label  id="label_actividad_cony">Actividad que realiza : </label>
+              <input type="text" class="form-control " id="actividad_cony"  maxlength="128" placeholder="Dirección" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_start_cony">Fecha de ingreso en esta actividad : </label>
+              <input type="text" class="form-control " id="start_cony"  maxlength="128" placeholder="Dirección" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label  id="label_salario_cony">Salario o Ingresos mensuales aprox.$: </label>
+              <input type="text" class="form-control " id="salario_cony"  maxlength="128" placeholder="Dirección" required>
+            </div>
+        </div>
+      <div class="row">
+        <div class="form-group col-md-12 col-lg-3">
+          <label  id="label_Sisben_cony">Sisbén</label>
+          <input type="text" class="form-control" id="Sisben_cony"  maxlength="128" placeholder="Caja de compensación" required>
+        </div>
+        <div class="form-group col-md-12 col-lg-3">
+          <label  id="label_categoria_cony">Categoría</label>
+          <input type="text" class="form-control" id="categoria_cony" maxlength="128" placeholder="¿Cual?" required>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+          <label  id="label_caja_compensacony">Caja de compensación</label>
+          <input type="text" class="form-control" id="caja_compensacony"  maxlength="128" placeholder="Caja de compensación" required>
+        </div>
+        <div class="form-group col-md-12 col-lg-2">
+          <label  id="label_CualCajaCony">¿Cual? </label>
+          <input type="text" class="form-control" id="CualCajaCony" maxlength="128" placeholder="¿Cual?" required>
+        </div>
+       </div>
+        <br>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-4">
+            <label  id="label_nombre_jefcony">Nombre del Jefe (si aplica):</label>
+          </div>
+          <div class="form-group col-md-12 col-lg-8">
+            <input type="text" class="form-control " id="nombre_jefcony"  maxlength="128" placeholder="Dirección" required>
+          </div>
+        </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_inconsistenciascony">Concepto de la T.S e inconsistencias</label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8">
+              <textarea class="form-control margin" id="inconsistenciascony" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-title">
+          <label><b>Nota:</b> Se debe realizar visita sorpresa al conyugue que tenga trabajo independiente. </label>
+          <label for=""><b>Seguimiento posterior a la visita de la cabeza de hogar y conyugue</b> (Esta actividad se debe realizar con las personas que no tengan un contrato formal, pero tengan un jefe inmediato)</label>
+          <label for="" class="Redondo bordes">Constancia de la primera llamada telefónica 15 días después de la visita al trabajo actual del conyugue</label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_Fecha_fin">Fecha</label>
+              <input type="date" class="form-control " id="Fecha_fin"  maxlength="128" placeholder="Fecha" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_hora_idLla1">Hora</label>
+              <input type="time" class="form-control " id="hora_idLla1" maxlength="128" placeholder="Hora" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label  id="label_telefono_idLla1">Teléfono</label>
+              <input type="text" class="form-control " id="telefono_idLla1" maxlength="128" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-12 justify-content-center">
+              <label  class="label_barrio_tra"><b>ATENDIÓ EL JEFE</b></label>
+                <input type="radio" class="btn-check "  id="jefeAsi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="jefeAsi">SI</label>
+                <input type="radio" class="btn-check "  id="jefeAno" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="jefeAno">NO</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_observacionFin"><b>Observaciones</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="observacionFin" rows="4"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label  id="label_concep_general text-center"><b>Concepto General de la CSF e inconsistencias</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="concep_general" rows="4"></textarea>
+            </div>
+          </div>  
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted" style="background-color: #EFC714;">
+    <br>
+  </div>
+</div>

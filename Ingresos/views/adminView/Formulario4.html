@@ -1,0 +1,591 @@
+<!-- FORMULARIO #3 -->
+<div class="" id="">
+          <div class="row p-2">
+            <div class="card-header" style="background-color: #EFC714;">
+              <div class="row p-2">
+                <label><b>FORMULARIO SF.F.4.1</b></label>
+                <div class="row p-2">
+                  <label id="nombre_3" style="text-align: center;"></label>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-4">
+                    <label for="nombreCompleto" class="label_visita">Fecha de la visita</label>
+                    <input type="date" class="form-control labelTrabajo" id="visita" name="" maxlength="128" placeholder="Nombre" required>
+                  </div>
+                  <div class="form-group col-md-12 col-lg-4">
+                    <label for="nombreCompleto" class="label_inicio">Hora de inicio: </label>
+                    <input type="time" class="form-control labelBarrio" id="inicio" maxlength="128" placeholder="Hora de inicio" required>
+                  </div>
+                  <div class="form-group col-md-12 col-lg-4">
+                    <label for="nombreCompleto" class="label_Hora_fin">Hora de fin : </label>
+                    <input type="time" class="form-control labelBarrio" id="Hora_fin" maxlength="128" placeholder="Hora de fin" required>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="form-group col-md-12 col-lg-12">
+                      <label for="nombreCompleto" class="label_tipo_grupo">Seleccione el grupo correspondiente despues de la visita : </label>
+                      <select class="form-control btnSelector" id="tipo_grupo" onchange="SelecMedio()"></select>
+                    </div>
+                  </div>
+              </div>
+              <br>
+              <span id="id_code"></span>
+            </div>
+            <br>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <button class="nav-link active" id="linkA" onclick="ActiveMenu4('A')">Documento1</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="linkB" onclick="ActiveMenu4('B')">Documento 2</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="linkC" onclick="ActiveMenu4('C')">Documento 3</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="linkD" onclick="ActiveMenu4('D')">Documento 4</button>
+                </li>
+              </ul>
+
+              <!-- Apartado A -->
+              <div class="card-body" id="tableA4">
+                <div class="form-container">
+                  <div class="form-title">
+                    <label class="Redondo bordes" id="conyugue_id"><b>CABEZA DE HOGAR Y CONYUGUE</b></label>
+                  </div>
+                  <div class="card" id="conyugue_id_card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_nombre">Nombre y apellidos </label>
+                        <input type="text" class="form-control labelTrabajo" id="id_nombre" name="" maxlength="128" placeholder="Nombre y apellidos" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_cedula">Número de cedula: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_cedula" maxlength="128" placeholder="Número de cedula" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_edad">Edad: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_edad" maxlength="128" placeholder="Edad" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_nombre2">Nombre y apellidos </label>
+                        <input type="text" class="form-control labelTrabajo" id="id_nombre2" name="" maxlength="128" placeholder="Nombre y apellidos" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_cedula2">Número de cedula: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_cedula2" maxlength="128" placeholder="Número de cedula" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_edad2">Edad: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_edad2" maxlength="128" placeholder="Edad" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-12 ">
+                        <p>Nombres de las personas que NO estuvieron presentes y el motivo</p>
+                      </div>
+                    </div>
+                      <br>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-title">
+                    <label class="Redondo bordes" id="conyugue_id"><b>INFORMACIÓN DE LA VIVIENDA</b></label>
+                  </div>
+                  <div class="card" id="informacion_id_card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-8">
+                        <label for="nombreCompleto" class="label_id_nombre_arrendo">3.1.	Nombre de quién le arrendó </label>
+                        <input type="text" class="form-control labelTrabajo" id="id_nombre_arrendo" name="" maxlength="128" placeholder="Nombre de quién le arrendó" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_arrendotel">Teléfono: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_arrendotel" maxlength="128" placeholder="Teléfono" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_direccion">Dirección :</label>
+                        <input type="text" class="form-control labelTrabajo" id="id_direccion" name="" maxlength="128" placeholder="Dirección" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_sector">Sector: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_sector" maxlength="128" placeholder="Sector" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_id_barrio">Barrio : </label>
+                        <input type="text" class="form-control labelBarrio" id="id_barrio" maxlength="128" placeholder="Barrio" required>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="form-group col-md-12 col-lg-6">
+                        <label for="nombreCompleto" class="label_id_Estrato">Estrato: </label>
+                        <input type="text" class="form-control labelBarrio" id="id_Estrato" maxlength="128" placeholder="Estrato" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-6">
+                        <label for="nombreCompleto" class="label_valor_arriendo">Valor del arriendo</label>
+                        <input type="text" class="form-control labelTrabajo" id="valor_arriendo" name="id_valor_arriendo" maxlength="128" placeholder="$" required>
+                      </div>
+                    </div>                      
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-12">
+                        <p>Instrucciones para llegar a la vivienda </p>
+                        <textarea class="form-control" id="instrucciones" rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-7">
+                        <label for="nombreCompleto" class="label_id_cantidad ">3.2.	Cuántas personas la habitan </label>
+                        <input type="text" class="form-control labelTrabajo" id="id_cantidad" name="" maxlength="128" placeholder="Cuántas personas la habitan" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-5">
+                        <label for="nombreCompleto" class="label_id_tiempoViviendo">Cuánto tiempo viven en este lugar : </label>
+                        <input type="text" class="form-control labelBarrio" id="id_tiempoViviendo" maxlength="128" placeholder="Cuánto tiempo viven" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-12 text-center">
+                        <p><b>Nota:</b>Verificar que la información registrada en el SF.F.3C sea cierta</p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <br>
+                <div class="card-footer text-muted" style="background-color: #EFC714;">
+                  <br>
+                </div>  
+              </div>
+              <!-- table b -->
+              <div class="card-body d-none" id="tableB4">
+                <div class="form-container">
+                  <div class="form-title">
+                    <label class="Redondo bordes" id="conyugue_id"><b>TIPO DE VIVIENDA</b></label>
+                  </div>
+                  <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_direccion_tra ">Tipo vivienda : </label>
+                        <input type="text" class="form-control labelTrabajo" id="direccion_tra" name="direccion_tra" maxlength="128" placeholder="Dirección" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_N_habitaciones">Cuántas piezas tiene la vivienda señalada: </label>
+                        <input type="text" class="form-control labelBarrio" id="N_habitaciones" maxlength="128" placeholder="numero de habitaciones" required>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_N_habitantes">Cuántas piezas habitó la familia : </label>
+                        <input type="text" class="form-control labelBarrio" id="N_habitantes" maxlength="128" placeholder="numero de habitantes" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>BAÑO COMPARTIDO</b></label>
+                          &nbsp;&nbsp;
+                            <input type="radio" class="btn-check " name="PreguntaA" id="PreguntaASi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaASi">SI</label>
+                            <input type="radio" class="btn-check " name="PreguntaA" id="PreguntaANo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaANo">NO</label>
+                        </div>
+                        <br>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>COCINA COMPARTIDA</b></label>
+                            <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaBSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaBSi">SI</label>
+                            <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaBNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaBNo">NO</label>
+                        </div>
+                        <br>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>PATIO COMPARTIDO</b></label>
+                          &nbsp;&nbsp;
+                            <input type="radio" class="btn-check " name="PreguntaC" id="PreguntaCSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaCSi">SI</label>
+                            <input type="radio" class="btn-check " name="PreguntaC" id="PreguntaCNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaCNo">NO</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                        <label for="nombreCompleto" class="label_barrio_tra Redondo bordes"><b>Material paredes :</b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+                        <select class="form-control" id="tipoPared"></select>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                        <label for="nombreCompleto" class="label_barrio_tra Redondo bordes"><b>Material pisos : </b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+                        <select class="form-control" id="tipoPiso"> </select>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>Aseo paredes :</b></label>
+                          <select class="form-control" id="aseo_paredes"></select>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>Aseo pisos :</b></label>
+                          <select class="form-control" id="aseo_pisos"></select>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto" class="label_barrio_tra"><b>Aseo y orden general :</b></label>
+                          <select class="form-control" id="aseo_ordenge"></select>
+                        </div>
+                    </div>
+                    <br>
+                  </div>
+                  <div class="form-title">
+                    <label class="Redondo bordes"><b>SERVICIOS QUE COMPARTEN (VER FACTURAS RECIENTES)</b></label>
+                  </div> 
+                  <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_barrio_tra"><b>AGUA</b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="radio" class="btn-check " name="PreguntaD" id="PreguntaDSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaDSi">SI</label>
+                        <input type="radio" class="btn-check " name="PreguntaD" id="PreguntaDNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaDNo">NO</label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="number" class="form-control labelBarrio" id="servisAgua" maxlength="128" placeholder="Valor" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_barrio_tra"><b>LUZ</b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="radio" class="btn-check " name="PreguntaE" id="PreguntaESi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaESi">SI</label>
+                        <input type="radio" class="btn-check " name="PreguntaE" id="PreguntaENo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaENo">NO</label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="number" class="form-control labelBarrio" id="servisLuz" maxlength="128" placeholder="Valor" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_barrio_tra"><b>GAS NATURAL</b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="radio" class="btn-check " name="PreguntaF" id="PreguntaFSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaFSi">SI</label>
+                        <input type="radio" class="btn-check " name="PreguntaF" id="PreguntaFNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaFNo">NO</label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="number" class="form-control labelBarrio" id="servisGas" maxlength="128" placeholder="Valor" required>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-4">
+                        <label for="nombreCompleto" class="label_barrio_tra"><b>TELEFONO</b></label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="radio" class="btn-check " name="PreguntaG" id="PreguntaGSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaGSi">SI</label>
+                        <input type="radio" class="btn-check " name="PreguntaG" id="PreguntaGNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaGNo">NO</label>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-4">
+                        <input type="number" class="form-control labelBarrio" id="servisCel" maxlength="128" placeholder="Valor" required>
+                      </div>
+                    </div>                        
+                  </div>
+                  <div class="form-title">
+                    <label class="Redondo bordes"><b>EQUIPOS QUE TIENEN - MARCAR EL ESTADO</b></label><p>B (Bueno), R (Regular), M (Malo) si lo tienen:</p>
+                  </div> 
+                  <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Tv</label>
+                        <select name=""  class="form-control" id="id_tv"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Equipo Sonido</label>
+                        <select name=""  class="form-control" id="id_sonido"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Grabadora</label>
+                        <select name=""  class="form-control" id="id_Grabadora"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Computador</label>
+                        <select name=""  class="form-control" id="id_Computador"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Lavadora</label>
+                        <select name=""  class="form-control" id="id_Lavadora"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Nevera</label>
+                        <select name=""  class="form-control" id="id_Nevera"></select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Secadora</label>
+                        <select name=""  class="form-control" id="id_Secadora"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Dvd</label>
+                        <select name=""  class="form-control" id="id_DVD"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-2">
+                        <label for="nombreCompleto" class="label_barrio_tra">Vhs</label>
+                        <select name=""  class="form-control" id="id_VHS"></select>
+                      </div>
+                      <div class="form-group col-md-12 col-lg-6">
+                        <label for="nombreCompleto" class="label_barrio_tra">Otros</label>
+                        <input type="text" class="form-control" id="id_otrosElectricos" placeholder="Cúal?">
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+                <br>
+                <div class="card-footer text-muted" style="background-color: #EFC714;">
+                  <br>
+                </div>   
+              </div>
+              <!-- table c -->
+             <div class="card-body d-none" id="tableC4">
+                          <div class="form-container">
+                                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_estado_sala"><b>SALA </b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-10">
+                                      <input type="text" class="form-control labelTrabajo" id="estado_sala" maxlength="128" placeholder="Estado" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_estado_comedor"><b>COMEDOR</b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-10">
+                                      <input type="text" class="form-control labelTrabajo" id="estado_comedor" maxlength="128" placeholder="Estado" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_estado_alcobas"><b>ALCOBAS</b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-10">
+                                      <input type="text" class="form-control labelTrabajo" id="estado_alcobas" maxlength="128" placeholder="Estado" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_estado_otros"><b>OTROS LUGARES</b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-10">
+                                      <input type="text" class="form-control labelTrabajo" id="estado_otros" maxlength="128" placeholder="Estado" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_estado_obs"><b>OBS. TS</b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-10">
+                                      <input type="text" class="form-control labelTrabajo" id="estado_obs" maxlength="128" placeholder="Estado" required>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_direccion_tra "><b>POSEE VEHÍCULO</b></label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                                      <select class="form-control" id="vehiculo">
+                                        <option data-val="0">---</option>
+                                        <option data-val="1">No aplica </option>
+                                        <option data-val="2">Carro </option>
+                                        <option data-val="3 ">Moto </option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center  ">
+                                      <input type="text" class="form-control labelBarrio" id="id_modelo" maxlength="128" placeholder="Modelo del vehiculo : " required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-2 d-flex align-items-center justify-content-center  ">
+                                      <input type="text" class="form-control labelBarrio" id="id_valor" maxlength="128" placeholder="Valor Aprox. $: " required>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-title">
+                                  <label class="Redondo bordes" id="conyugue_id"><b>CAJA DE COMPENSACIÓN Y SISBEN</b></label>
+                                </div>
+                                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_sisben">Sisben</label>
+                                      <input type="text" class="form-control labelTrabajo" id="sisben" name="" maxlength="128" placeholder="Nombre y apellidos" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_id_sisben_categoria">Categoría sisben</label>
+                                      <input type="text" class="form-control labelTrabajo" id="id_sisben_categoria" name="" maxlength="128" placeholder="Nombre y apellidos" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_barrio_tra">Fecha de afiliación: </label>
+                                      <input type="date" class="form-control labelBarrio" id="id_fecha_afiliacion" maxlength="128" placeholder="" required>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_caja_compensacion">Caja de compensación</label>
+                                      <input type="text" class="form-control labelTrabajo" id="caja_compensacion" name="" maxlength="128" placeholder="" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_id_caja_fecha">Fecha de afilicación</label>
+                                      <input type="date" class="form-control labelTrabajo" id="id_caja_fecha" name="" maxlength="128" placeholder="" required>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-4">
+                                      <label for="nombreCompleto" class="label_id_cajacompensacionC">Cual: </label>
+                                      <input type="text" class="form-control labelBarrio" id="id_cajacompensacionC" maxlength="128" placeholder="" required>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-title">
+                                  <label class="Redondo bordes" id="conyugue_id"><b>COMENTARIOS</b></label>
+                                </div>
+                                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_exampleFormControlTextarea1">Nombres y comentarios de los vecinos:</label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-8">
+                                      <textarea class="form-control margin" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_concepto_personas">Escribir el concepto sobre cada una de las personas y sobre la familia en general incluyendo situaciones especiales registradas en el formato de solicitud (eje. Discapacidades):</label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-8">
+                                      <textarea class="form-control margin" id="concepto_personas" rows="4"></textarea>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+                                      <label for="nombreCompleto" class="label_concepto_inconsistencias">Escribir inconsistencias, dudas sobre la veracidad de la información.</label>
+                                    </div>
+                                    <div class="form-group col-md-12 col-lg-8">
+                                      <textarea class="form-control margin" id="concepto_inconsistencias" rows="4"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <br>
+                          <div class="card-footer text-muted" style="background-color: #EFC714;">
+                            <br>
+                          </div>   
+             </div>
+              <!-- table d -->
+             <div class="card-body d-none" id="tableD4">
+                          <div class="form-container">
+                                <div class="form-title">
+                                  <p>
+                                    <b>Notas:</b>
+                                    Esta visita se realiza cuando la familia habita la vivienda actual por un periodo igual o menor a 3 meses y aplica únicamente para la visita anunciada. 
+                                  </p>
+                                </div>
+                                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                    <div class="row">
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto realizado por T.S. sobre la vivienda anterior SF.F.4.1A :</label>
+                                        <select name="" class="form-control" id="concepto_vivienda_ant"></select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Conceptos sobre la visita :</label>
+                                        <select name="" class="form-control" style="margin-top: 24px;" id="concepto_visita"></select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Evaluar los conocimientos de lecto-escritura y registrar :</label>
+                                        <select name=""  class="form-control" id="conocimientos_id"></select>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+                                        <label for="nombreCompleto" class="label_direccion_tra ">¿Se debe realizar visita laboral anunciada?(Dialogar telefónicamente con la CSF en caso de encontrar inconsistencias, aclarar dudas sobre esta visita y si es aprobada programar la visita al lugar de trabajo), aplica únicamente para la visita anunciada.</label>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaBSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaBSi">SI</label>
+                                        <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaB" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaB">NO</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-title">
+                                    <label class="Redondo bordes" id="conyugue_id"><b>CONCEPTOS</b></label>
+                                  </div>
+                                  <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                    <div class="row">
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto de la persona que realizó la visita sorpresa</label>
+                                        <select name="" style="margin-top: 48px;" class="form-control" id="concepto_vivienda_actual"></select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Clasificación según conceptos de la persona que hizo la visita y de la persona que la coordinó::</label>
+                                        <select name="" class="form-control" style="margin-top: 24px;" id="concepto_visita">
+                                          <option data-val="">-- </option>
+                                          <option data-val="preAprobada">Solicitud pre-aprobada </option>
+                                          <option data-val="noAprobada">Solicitud no aprobada </option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto de la T.S. sobre la visita domiciliaria sorpresa  :</label>
+                                        <select name=""  class="form-control" style="margin-top: 48px;" id="visita_domiciliaria"></select>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="form-group col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
+                                        <label for="nombreCompleto" class="label_barrio_tra"><b>Clasificación Final :</b></label>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-8 d-flex justify-content-center align-items-center">
+                                        <select name="" class="form-control" id="concepto_visita">
+                                          <option data-val="">-- </option>
+                                          <option data-val="preAprobada">Solicitud pre-aprobada </option>
+                                          <option data-val="noAprobada">Solicitud no aprobada </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-title">
+                                    <label class="Redondo bordes" id="conyugue_id"><b>PARA SER DILIGENCIADO EN LA OFICINA PRINCIPAL</b></label>
+                                  </div>
+                                  <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                                    <div class="row">
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto de la T.S. sobre la visita laboral (anexo 4.2): </label>
+                                        <select name="" class="form-control" id="4_2"></select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto de la T.S. sobre la visita domiciliaria anunciada (anexo 4.1):</label>
+                                        <select name="" class="form-control" id="4_1"></select>
+                                      </div>
+                                      <div class="form-group col-md-12 col-lg-4">
+                                        <label for="nombreCompleto" class="label_barrio_tra">Concepto de la T.S. sobre la visita domiciliaria sorpresa 1 (anexo 4.1): </label>
+                                        <select name=""  class="form-control" id="4_1_sorpresa"></select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  </div>
+                                  <br>
+                                  <div class="card-footer text-muted" style="background-color: #EFC714;">
+                                    <br>
+                                  </div>   
+             </div>

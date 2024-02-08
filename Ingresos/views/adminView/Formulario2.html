@@ -1,0 +1,370 @@
+<div class="card">
+  <div class="card-header" style="background-color: #EFC714;" >
+    <div class="row p-2"><label><b>FORMULARIO SF.F.3B</b></label></div>
+    <div class="row p-2" ><label id="nombre_" style="text-align: center;"></label></div>
+    <div class="row p-2"><label><b>Solicitud para persona:</b></label></div><!-- class="Redondo bordes" -->
+    <div class="row p-2">
+      <div class="col-md-6 col-sm-12"><button type="button" class="btn btn-rounded" style="width: 194px; background-color:#303689 ; color: white;"  onclick="ActiveTypeB('A')"><b>Independiente</b></button></div>
+      <div class="col-md-6 col-sm-12"><button type="button" class="btn btn-rounded" style="background-color:#303689 ; color: white;" onclick="ActiveTypeB('B')"><b>Trabajador empresa</b></button></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-body d-none" id="tableA2">
+      <div class="form-container">
+        <div class="form-title">
+          <label><b>SOLICITUD DE PERSONAS INDEPENDIENTES</b></label>
+        </div>
+        <div class="form-title p-3">
+          <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ACTUAL DE LA CABEZA DE HOGAR:</b></label><!-- class="Redondo bordes" -->
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto" class="label_direccion_tra ">Dirección de trabajo: </label>
+              <input type="text" class="form-control labelTrabajo" id="direccion_tra" name="direccion_tra" maxlength="128" placeholder="Dirección" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto" class="label_barrio_tra">Barrio: </label>
+              <input type="text" class="form-control labelBarrio" id="barrio_tra" maxlength="128" placeholder="Barrio" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edadEncuestado" class="label_actividad_tra">Oficio o actividad: </label>
+            <input type="text" class="form-control labelActividad" id="actividad_tra" placeholder="actividad" maxlength="25" required/>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="edadEncuestado" class="label_ingreso_tra">Ingreso mensual aproximado: </label>
+              <input type="text" class="form-control labelIngreso" id="ingreso_tra" placeholder="Ingreso" maxlength="25" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="idIdentificacion" class="label_date_tra">Fecha de inicio de esta actividad: </label>
+              <input type="date" id="date_tra" class="form-control labelDate" placeholder="Fecha" maxlength="15" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="telefono" class="label_horario_tra">Horario de trabajo: </label>
+              <input type="text" class="form-control labelHorario" id="horario_tra" placeholder="Horario" maxlength="12" required/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="edadEncuestado">Nombre del jefe inmediato o contratista si aplica:  </label>
+              <input type="text" class="form-control labelJefe" id="jefe_tra" placeholder="Nombre" maxlength="25" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="idIdentificacion" class="label_jefe_tra">Teléfono: </label>
+              <input type="number" id="jefe_numero_trabajo"  class="form-control labelJefe_numero" placeholder="Telefono" maxlength="15" required/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="edadEncuestado" class="label_sisben">Fecha de afiliación al SISBEN : </label>
+              <input type="date" class="form-control labelSisben" id="sisben" placeholder="Fecha" maxlength="25" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="tipoAtencion" class="label_categoria_sis" >Categoría: </label>
+              <input type="text" class="form-control labelSisben_categoria" id="categoria_sis" placeholder="Categoria" disabled required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-title p-3">
+          <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ANTERIOR DE LA CABEZA DE HOGAR:</b></label><!-- class="Redondo bordes" -->
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_anterior_dire">Dirección del sitio de trabajo: </label>
+            <input type="text" class="form-control labelAnteriorDire" id="anterior_dire" maxlength="128" placeholder="Dirección" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_anterior_barrio_">Barrio: </label>
+            <input type="text" class="form-control labelAnteriorBarrio " id="anterior_barrio_" maxlength="128" placeholder="Barrio" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="edadEncuestado" class="label_anterior_actividad_">Oficio o actividad: </label>
+          <input type="text" class="form-control labelAnteriorActividad" id="anterior_actividad_" placeholder="actividad" maxlength="25" required/>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="edadEncuestado" class="label_anterior_salario_">Ingreso mensual aproximado: </label>
+            <input type="text" class="form-control labelAnteriorSalario" id="anterior_salario_" placeholder="Ingreso" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="idIdentificacion" class="label_anterior_date_">Fecha de inicio de esta actividad: </label>
+            <input type="date" id="anterior_date_" class="form-control labelAnteriorDate" placeholder="Fecha" maxlength="15" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="telefono" class="label_anterior_horario_">Horario de trabajo: </label>
+            <input type="time" class="form-control labelAnteriorHorario" id="anterior_horario_" placeholder="Horario" maxlength="12" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="edadEncuestado" class="label_anterior_jefe_">Nombre del jefe inmediato o contratista (si aplica):  </label>
+            <input type="text" class="form-control labelAnteriorJefe" id="anterior_jefe_" placeholder="Nombre" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="idIdentificacion" class="label_anterior_jefe_telefono_">Teléfono: </label>
+            <input type="number" id="anterior_jefe_telefono_" class="form-control labelAnteriorJefe_numero" placeholder="Telefono" maxlength="15" required/>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="card-body" id="tablaConyuge">
+        <div class="form-container">
+          <div class="form-title p-3">
+            <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ACTUAL DEL CÓNYUGE:</b></label>
+          </div>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+        <div class="row">
+          <div class="form-group col-md-4 col-lg-4">
+            <label for="nombreCompleto" class="label_nombre_cony">Nombre: </label>
+            <input type="text" class="form-control" id="nombre_cony" maxlength="128" placeholder="Nombre" required>
+          </div>
+          <div class="form-group col-md-4 col-lg-4">
+            <label for="nombreCompleto" class="label_cedula_cony">Cédula: </label>
+            <input type="text" class="form-control" id="cedula_cony" maxlength="128" placeholder="Cédula" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto" class="label_telefono_cony">Teléfono: </label>
+            <input type="text" class="form-control" id="telefono_cony" maxlength="128" placeholder="Telefono" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_tipo_trabajo">Trabajo </label>
+            <select class="form-control custom-select" id="tipoUsuario_cony">
+              <option value="Independiente">Independiente</option>
+              <option value="Empleado">Empleado</option>
+            </select>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_empresa_cony">Nombre de la empresa (si aplica): </label>
+            <input type="text" class="form-control" id="empresa_cony" maxlength="128" placeholder="Nombre de la empresa" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_direccion_cony">Dirección del sitio de trabajo: </label>
+            <input type="text" class="form-control" id="direccion_cony" maxlength="128" placeholder="Dirección del sitio de trabajo" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" class="label_barrio_cony">Barrio: </label>
+            <input type="text" class="form-control" id="barrio_cony" maxlength="128" placeholder="Barrio" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="edadEncuestado" class="label_actividad_cony">Oficio o actividad: </label>
+            <input type="text" class="form-control" id="actividad_cony" placeholder="actividad" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="edadEncuestado" class="label_actividad_cony">Cargo: </label>
+            <input type="text" class="form-control" id="cargo_cony" placeholder="Cargo" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="edadEncuestado" class="label_mensual_cony">Salario: </label>
+            <input type="text" class="form-control" id="mensual_cony" placeholder="Ingreso" maxlength="25" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="idIdentificacion" class="label_date_cony">Fecha de inicio de esta actividad: </label>
+            <input type="date" id="date_cony" class="form-control" placeholder="Fecha" maxlength="15" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="telefono" class="label_horario_cony">Horario de trabajo: </label>
+            <input type="time" class="form-control" id="horario_cony" placeholder="Horario" maxlength="12" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="edadEncuestado" class="label_jefe_cony">Nombre del jefe inmediato o contratista :  </label>
+            <input type="text" class="form-control" id="jefe_cony" placeholder="Nombre" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="idIdentificacion" class="label_jefe_num_cony">A que caja de Compensación esta afiliado (si aplica):  </label>
+            <input type="number" id="jefe_num_cony" class="form-control" placeholder="Caja de Compensación" maxlength="15" required/>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="card-body d-none" id="tableB2">
+      <div class="form-container">
+        <div class="form-title">
+          <label><b>SOLICITUD DE PERSONAS CON CONTRATO DE TRABAJO EN EMPRESAS</b></label>
+        </div>
+        <div class="form-title">
+          <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ACTUAL DE LA CABEZA DE HOGAR</b></label><!-- class="Redondo bordes" -->
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto">Nombre: </label>
+            <input type="text" class="form-control" id="nombreContract" maxlength="128" placeholder="Nombre" disabled required>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto">Cédula: </label>
+            <input type="text" class="form-control" id="cedulaContract" maxlength="128" placeholder="Cédula" disabled required>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto">Telefono: </label>
+            <input type="text" class="form-control" id="celContract" maxlength="128" placeholder="Telefono" disabled required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto">Nombre de la empresa : </label>
+            <input type="text" class="form-control" id="empresaContract" maxlength="128" placeholder="Nombre de la empresa " required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto">Cargo : </label>
+            <input type="text" class="form-control" id="cargoContract" maxlength="128" placeholder="Cargo" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="edadEncuestado">Salario : </label>
+            <input type="text" class="form-control" id="salarioContract" placeholder="$" maxlength="25" required/>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="edadEncuestado">Fecha de inicio :</label>
+            <input type="date" class="form-control" id="fechaInicialContract" placeholder="Fecha" maxlength="25" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-12">
+            <label for="edadEncuestado">A que caja de Compensación esta afiliado: </label>
+            <input type="text" class="form-control" id="CajaComContract" placeholder="Caja de Compensación" maxlength="25" required/>
+          </div>
+        </div>
+       </div>
+       <div class="form-title p-3">
+        <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ANTERIOR DE LA CABEZA DE HOGAR:</b></label><!-- class="Redondo bordes" -->
+      </div>
+      <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+      <div class="row">
+        <div class="form-group col-md-12 col-lg-6">
+          <label for="nombreCompleto" class="label_anterior_dire2">Dirección del sitio de trabajo: </label>
+          <input type="text" class="form-control labelAnteriorDire2" id="anterior_dire2" maxlength="128" placeholder="Dirección" required>
+        </div>
+        <div class="form-group col-md-12 col-lg-6">
+          <label for="nombreCompleto" class="label_anterior_barrio_2">Barrio: </label>
+          <input type="text" class="form-control labelAnteriorBarrio " id="anterior_barrio_2" maxlength="128" placeholder="Barrio" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="edadEncuestado" class="label_anterior_actividad_2">Oficio o actividad: </label>
+        <input type="text" class="form-control labelAnteriorActividad2" id="anterior_actividad_2" placeholder="actividad" maxlength="25" required/>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12 col-lg-4">
+          <label for="edadEncuestado" class="label_anterior_salario_2">Ingreso mensual aproximado: </label>
+          <input type="text" class="form-control labelAnteriorSalario2" id="anterior_salario_2" placeholder="Ingreso" maxlength="25" required/>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+          <label for="idIdentificacion" class="label_anterior_date_2">Fecha de inicio de esta actividad: </label>
+          <input type="date" id="anterior_date_2" class="form-control labelAnteriorDate2" placeholder="Fecha" maxlength="15" required/>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+          <label for="telefono" class="label_anterior_horario_2">Horario de trabajo: </label>
+          <input type="time" class="form-control labelAnteriorHorario2" id="anterior_horario_2" placeholder="Horario" maxlength="12" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12 col-lg-6">
+          <label for="edadEncuestado" class="label_anterior_jefe_2">Nombre del jefe inmediato o contratista (si aplica):  </label>
+          <input type="text" class="form-control labelAnteriorJefe" id="anterior_jefe_2" placeholder="Nombre" maxlength="25" required/>
+        </div>
+        <div class="form-group col-md-12 col-lg-6">
+          <label for="idIdentificacion" class="label_anterior_jefe_telefono_2">Teléfono: </label>
+          <input type="number" id="anterior_jefe_telefono_2" class="form-control labelAnteriorJefe_numero2" placeholder="Telefono" maxlength="15" required/>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="form-container" id="empresaConyuge">
+        <br>
+        <div class="form-title">
+          <label class="Redondo bordes"><b>ACTIVIDAD LABORAL ACTUAL DEL CÓNYUGE:</b></label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto">Nombre: </label>
+              <input type="text" class="form-control" id="nombreConyContract" maxlength="128" placeholder="Nombre" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto">Cédula: </label>
+              <input type="text" class="form-control" id="cedulaConyContract" maxlength="128" placeholder="Cédula" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto">Telefono: </label>
+              <input type="text" class="form-control" id="celConyContract" maxlength="128" placeholder="Telefono" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto" class="">Trabajo </label>
+              <select class="form-control" id="workConyContract">
+                <option value="Independiente">Independiente</option>
+                <option value="Empleado">Empleado</option>
+              </select>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto">Nombre de la empresa (si aplica): </label>
+              <input type="text" class="form-control" id="empresaConyContract" maxlength="128" placeholder="Nombre de la empresa" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto">Dirección del sitio de trabajo: </label>
+              <input type="text" class="form-control" id="dirConyContract" maxlength="128" placeholder="Dirección del sitio de trabajo" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="nombreCompleto">Oficio o actividad: </label>
+              <input type="text" class="form-control" id="activiConyContract" maxlength="128" placeholder="Oficio o actividad" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-12">
+              <label for="edadEncuestado">Cargo : </label>
+              <input type="text" class="form-control" id="cargoConyContract" placeholder="Cargo" maxlength="25" required/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="idIdentificacion">Fecha de inicio de esta actividad: </label>
+              <input type="date" id="dateinitialConyContract" class="form-control" placeholder="Fecha" maxlength="15" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="telefono">Horario de trabajo: </label>
+              <input type="text" class="form-control" id="horarioConyContract" placeholder="Horario" maxlength="12" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="telefono">Salario: </label>
+              <input type="text" class="form-control" id="salarioConyContract" placeholder="Salario" maxlength="12" required/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="edadEncuestado">Nombre del jefe inmediato o contratista:</label>
+              <input type="text" class="form-control" id="jefeConyContract" placeholder="Nombre del jefe" maxlength="25" required/>
+            </div>
+            <div class="form-group col-md-12 col-lg-6">
+              <label for="idIdentificacion">A que caja de Compensación esta afiliado (si aplica) : </label>
+              <input type="number" id="cajaComConyContract" class="form-control" placeholder="Caja de Compensación" maxlength="15" required/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted" style="background-color: #EFC714;">
+    <br>
+  </div>
+</div>

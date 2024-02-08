@@ -1,0 +1,211 @@
+<!-- MODAL INICIAL-->
+<div class="" id="">
+  <div class="row p-2">
+    <div class="card-header" style="background-color: #EFC714;">
+      <div class="row p-2"><label><b>FORMULARIO SF.F.3A</b></label></div>
+      <span id="id_code"></span>
+    </div>
+    <div class="card-body">
+      <div >
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button class="nav-link active" id="linkA" onclick="ActiveMenu('A')">Documento1</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="linkB" onclick="ActiveMenu('B')">Documento 2</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="linkC" onclick="ActiveMenu('C')">Documento 3</button>
+          </li>
+        </ul>
+        <div class="table-responsive" id="FormularioA">
+          <table class="table table-striped">
+            <tr><td colspan="2"><label class="Redondo bordes"><b>DOCUMENTOS QUE DEBEN DILIGENCIAR Y  ADJUNTAR A ESTE FORMULARIO:</b></label></td></tr>
+            <tr class="label_PreguntaA">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>a).</b> Experiencia de Trabajo debidamente diligenciado. Anexo SF.F.3B</label></td>
+              <td style="width: 15%">
+                <input type="radio" class="btn-check " name="PreguntaA" id="PreguntaASi" value="SI" autocomplete="off"  />
+                <label class="btn btn-outline-success" for="PreguntaASi">Si</label>
+              
+                <input type="radio" class="btn-check " name="PreguntaA" id="PreguntaANo" value="NO" autocomplete="off" />
+                <label class="btn btn-outline-danger" for="PreguntaANo">No</label>
+              </tr>
+            <tr class="label_PreguntaB">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>b).</b> Información sobre la vivienda que ocupa actualmente debidamente diligenciado. Anexo SF.F.3C</label></td>
+              <td style="width: 15%">
+                <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaBSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaBSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaB" id="PreguntaB" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaB">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaC">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>c).</b> Copias de las cédulas de ciudadanía de los mayores de edad.</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaC" id="PreguntaCSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaCSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaC" id="PreguntaCNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaCNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaD">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>d).</b> Registro civil de los hijos menores de edad.</label></td>
+              <td><input type="radio" class="btn-check " name="PreguntaD" id="PreguntaDSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaDSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaD" id="PreguntaD" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaD">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaE">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>e).</b> Último boletín de notas de los hijos mayores de 5 años.</label></td>
+              <td><input type="radio" class="btn-check " name="PreguntaE" id="PreguntaESi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaESi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaE" id="PreguntaENo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaENo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaF align-items-center justify-content-center">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>f).</b> Fotocopia del contrato de arrendamiento del lugar que habitan actualmente.  En caso de estar habitando el inmueble por un período inferior a 3 meses, debe anexar copia del anterior contrato o certificación del arrendador (Si es posible).  Al no tener un contrato de arrendamiento deberán presentar una carta del arrendador especificando valor del canon mensual y tiempo que hace que habitan el inmueble.</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaF" id="PreguntaFSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaFSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaF" id="PreguntaFNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaFNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaG">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>g).</b> Fotocopia del certificado judicial con fecha de expedición no mayor a 30 días de los solicitantes mayores de 18 años.</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaG" id="PreguntaGSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaGSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaG" id="PreguntaGNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaGNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaH">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>h).</b> Certificación de afiliación a la caja de compensación en caso de que la tenga.</label></td>
+              <td><input type="radio" class="btn-check " name="PreguntaH" id="PreguntaHSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaHSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaH" id="PreguntaHNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaHNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaI">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>i.)</b> Certificación de afiliación al Sisbén</label><div class="label_clasi_sisben d-none" id="clasi_sisben"> Clasificación: <select class="form-control sisben_select w-25 p-2" id="sisben_select"></select></div></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaI" id="PreguntaISi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaISi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaI" id="PreguntaINo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaINo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaJ">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>j). </b>Carta de recomendación o Certificación laboral de las cabezas de hogar con la fecha de ingreso y retiro. (Si aplica).</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaJ" id="PreguntaJSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaJSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaJ" id="PreguntaJNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaJNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaK">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>k). </b>Consulta de propiedad (Notaria de registro)</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaK" id="PreguntaKSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaKSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaK" id="PreguntaKNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaKNo">NO</label></td>
+            </tr>
+            <tr class="label_PreguntaL">
+              <td style="vertical-align: middle; text-align: left;"><label> <b>l). </b>Tiene propiedad?</label></td>
+              <td style="width: 15%"><input type="radio" class="btn-check " name="PreguntaL" id="PreguntaLSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="PreguntaLSi">SI</label>
+                <input type="radio" class="btn-check " name="PreguntaL" id="PreguntaLNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="PreguntaLNo">NO</label></td>
+            </tr>
+          </table>
+        </div>
+        <div  class="d-none table-responsive" id="FormularioB">
+          <table class="table table-striped" id="table_createParent">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+              </tr>
+              <tr>
+                <th><label>Nombres y Apellidos</label></th>
+                <th><label>Número de Identificación</label></th>
+                <th><label>Edad</label></th>
+                <th><label>Parentesco con la cabeza de hogar</label></th>
+                <th><label>Estudios</label></th>
+                <th><label>Lugar de Nacimiento</label></th>
+                <th><label>Fecha de Nacimiento</label></th>
+                <th><label>Agregar</label></th>
+                <th><label>Eliminar</label></th>
+              </tr>
+            </thead>
+            <tbody id="table_createParent"></tbody>
+            <tbody id="create_rowParent"></tbody>
+          </table>
+          
+        </div>
+        <div class="d-none table-responsive"  id="FormularioC">
+          <table class="table table-striped">
+            <td colspan="2">
+              <section class="row">
+                <section class="col-md-12">
+                  <section class="row">
+                    <div class="col-md-8">
+                      <label for="tipoAtencion" class="label_estadoCivil">Estado civil : </label>
+                      <select class="form-control estadoCivil" id="tipoAtencion"></select>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="nombreCompleto">Tiempo de convivencia : </label>
+                        <input type="text" class="form-control" id="tiempo_convi" maxlength="128" placeholder="Tiempo" required>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="col-md-8">
+                      <div class="form-group">
+                        <label for="nombreCompleto">Dirección de la vivienda actual : </label>
+                        <input type="text" class="form-control" id="dir_vivienda" maxlength="128" placeholder="Dirección" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form_group">
+                        <label for="">Sector : </label>
+                        <input type="text" class="form-control" id="sector" placeholder="Sector" required/>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="row">
+                    <div class="col-md-4">
+                      <div class="form_group">
+                        <label for="">Barrio : </label>
+                        <input type="text" class="form-control" id="barrio" placeholder="Barrio" required/>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="idIdentificacion">Telefono 1 : </label>
+                        <input type="text" id="telefono_1" class="form-control" placeholder="Número Telefonico" maxlength="20" required/>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="telefono">Telefono 2 : </label>
+                      <input type="text" class="form-control" id="telefono_2" placeholder="Número Telefonico" maxlength="20" required/>
+                    </div>
+                  </section>
+                </section>
+              </section>
+            </td>
+            <tr>
+              <td colspan="2">
+                <label><b>Nota:</b> A través de la empresa o telefónicamente al domicilio se les informará el resultado del estudio de la solicitud.</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <section class="row">
+                  <div class="col-md-8">
+                    <label for="tipoAtencion">Medio por el cual se enteró del programa de vivienda: </label>
+                    <select class="form-control btnSelector" id="medio" onchange="SelecMedio()"></select>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group" id="tipo_Medio">
+                      <label for="direccion" id="tipoSelecMedio"></label>
+                      <input type="text" class="form-control" id="direccion" maxlength="128" placeholder="" required>
+                      <div id="divCampos"> 
+                        <label for="tipoMed" id="Nombres_medio" class="d-none"></label>
+                        <input type="text" class="form-control d-none" id="informacionMedio" maxlength="128" placeholder="" required>
+                      </div>
+                      <div id="divC" class="d-none"> 
+                        <label for="tipoMed" >Dirección</label>
+                        <input type="text" class="form-control" maxlength="128" placeholder="" required>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted" style="background-color: #EFC714;">
+    <br>
+  </div>
+</div>  

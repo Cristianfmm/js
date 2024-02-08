@@ -1,0 +1,672 @@
+<div>
+  <div>
+    <h1 class=" bg-white rounded h1 mb-2 text-black text-center">Resumen primera etapa</h1>
+    <div class="text-center">
+      <label id="nombre_" style="text-align: center;" class="Redondo_amarillo"></label>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="form-group card rounded col-lg-6 col-md-6 table-responsive border-primary" style="height: 745px;">
+        <!-- tarjeta principal -->
+        <div class="mb-3 card-check card-checkx ">
+          <div class="form-title justify-content-center text-center margin-26">
+            <label for="" class="text-center Redondo bordes"><b>1) Tabla de miembros de la familia.</b></label>
+          </div>
+            <!-- miembros familia -->
+            <div class="card table-responsive" style="padding: 2%; background-color: #f2f2f2;" id="miembros_familia">
+              <table class="table table-bordered table-responsive" id="table_createParent">
+                <thead>
+                  <tr>
+                    <th style="background-color: #c0e4f7;"><label class="text-center" >Nombres y Apellidos</label></th>
+                    <th style="background-color: #c0e4f7;"><label class="text-center">Número de Identificación</label></th>
+                    <th class="text-center" style="background-color: #c0e4f7;"><label class="justify-content-center">Edad</label></th>
+                    <th class="text-center" style="background-color: #c0e4f7;"><label class="text-center">Parentesco con la cabeza de hogar</label></th>
+                    <th class="text-center" style="background-color: #c0e4f7;"><label class="text-center">Estudios</label></th>
+                    <th style="background-color: #c0e4f7;"><label class="text-center">Lugar de Nacimiento</label></th>
+                    <th style="background-color: #c0e4f7;"><label class="text-center">Fecha de Nacimiento</label></th>
+                  </tr>
+                </thead>
+                <tbody id="table_createParent"></tbody>
+                <tbody id="create_rowParent"><tr style="vertical-align: middle;" id="row_0"><td><input type="text" id="form2_name_0" name="usuario" placeholder="Nombre y Apellidos" class="form-control" value="1"></td><td><input type="text" id="form2_identidad_0" name="usuario" placeholder="Identidad" class="form-control" value="11"></td><td><input type="text" id="form2_edad_0" name="usuario" placeholder="Edad" class="form-control" value="1"></td><td><input type="text" id="form2_parent_0" name="usuario" placeholder="Parentesco" class="form-control" value="1"></td><td><input type="text" id="form2_estudio_0" name="usuario" placeholder="Estudios" class="form-control" value="1"></td><td><input type="text" id="form2_lugarNac_0" name="usuario" placeholder="Lugar de Nacimiento" class="form-control" value="1"></td><td><input type="text" id="form2_fechaNac_0" name="usuario" placeholder="Fecha de Nacimiento" class="form-control" value="2024-01-16"></td></tr><tr style="vertical-align: middle;" id="row_1"><td><input type="text" id="form2_name_1" name="usuario" placeholder="Nombre y Apellidos" class="form-control" value="1"></td><td><input type="text" id="form2_identidad_1" name="usuario" placeholder="Identidad" class="form-control" value="11"></td><td><input type="text" id="form2_edad_1" name="usuario" placeholder="Edad" class="form-control" value="1"></td><td><input type="text" id="form2_parent_1" name="usuario" placeholder="Parentesco" class="form-control" value="1"></td><td><input type="text" id="form2_estudio_1" name="usuario" placeholder="Estudios" class="form-control" value="1"></td><td><input type="text" id="form2_lugarNac_1" name="usuario" placeholder="Lugar de Nacimiento" class="form-control" value="1"></td><td><input type="text" id="form2_fechaNac_1" name="usuario" placeholder="Fecha de Nacimiento" class="form-control" value="2024-01-16"></td></tr><tr style="vertical-align: middle;" id="row_2"><td><input type="text" id="form2_name_2" name="usuario" placeholder="Nombre y Apellidos" class="form-control" value="1"></td><td><input type="text" id="form2_identidad_2" name="usuario" placeholder="Identidad" class="form-control" value="11"></td><td><input type="text" id="form2_edad_2" name="usuario" placeholder="Edad" class="form-control" value="1"></td><td><input type="text" id="form2_parent_2" name="usuario" placeholder="Parentesco" class="form-control" value="1"></td><td><input type="text" id="form2_estudio_2" name="usuario" placeholder="Estudios" class="form-control" value="1"></td><td><input type="text" id="form2_lugarNac_2" name="usuario" placeholder="Lugar de Nacimiento" class="form-control" value="1"></td><td><input type="text" id="form2_fechaNac_2" name="usuario" placeholder="Fecha de Nacimiento" class="form-control" value="2024-01-16"></td></tr><tr style="vertical-align: middle;" id="row_3"><td><input type="text" id="form2_name_3" name="usuario" placeholder="Nombre y Apellidos" class="form-control" value="1"></td><td><input type="text" id="form2_identidad_3" name="usuario" placeholder="Identidad" class="form-control" value="1"></td><td><input type="text" id="form2_edad_3" name="usuario" placeholder="Edad" class="form-control" value="1"></td><td><input type="text" id="form2_parent_3" name="usuario" placeholder="Parentesco" class="form-control" value="1"></td><td><input type="text" id="form2_estudio_3" name="usuario" placeholder="Estudios" class="form-control" value="160294"></td><td><input type="text" id="form2_lugarNac_3" name="usuario" placeholder="Lugar de Nacimiento" class="form-control" value="160294"></td><td><input type="text" id="form2_fechaNac_3" name="usuario" placeholder="Fecha de Nacimiento" class="form-control" value="2024-01-03"></td></tr></tbody>
+              </table>
+            </div>
+            <!-- informacion general -->
+            <div class="form-title justify-content-center text-center margin-26">
+              <label for="" class="text-center Redondo bordes"><b>2) Información general.</b></label>
+            </div>
+            <div class="card table-responsive" style="padding: 2%; background-color: #f2f2f2;">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Estado civil</td>
+                    <td><label for="" id="estado_civil">Casado(a)Tiempo :1</label></td>
+                  </tr>
+                  <tr>
+                    <td>Dirección de la vivienda Actual</td>
+                    <td><label for="" id="direccion_actual">123</label></td>
+                  </tr>
+                  <tr>
+                    <td>Sector</td>
+                    <td><label for="" id="inf_sector">1</label></td>
+                  </tr>
+                  <tr>
+                    <td>Barrio</td>
+                    <td><label for="" id="inf_Barrio">123</label></td>
+                  </tr>
+                  <tr>
+                    <td>Teléfono 1</td>
+                    <td><label for="" id="inf_Tel">123123</label></td>
+                  </tr>
+                  <tr>
+                    <td>Teléfono 2</td>
+                    <td><label for="" id="inf_Tel2">123</label></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <section class="row">
+                        <div class="col-md-8">
+                          <label for="tipoAtencion">Medio por el cual se enteró del programa de vivienda: </label>
+                          <select class="form-control btnSelector" id="medio" onchange="SelecMedio()"></select>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group" id="tipo_Medio">
+                            <label for="direccion" id="tipoSelecMedio"></label>
+                            <input type="text" class="form-control" id="direccion" maxlength="128" placeholder="" required>
+                            <div id="divCampos"> 
+                              <label for="tipoMed" id="Nombres_medio" class="d-none"></label>
+                              <input type="text" class="form-control d-none" id="informacionMedio" maxlength="128" placeholder="" required>
+                            </div>
+                            <div id="divC" class="d-none"> 
+                              <label for="tipoMed" >Dirección</label>
+                              <input type="text" class="form-control" maxlength="128" placeholder="" required>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Experiencia de trabajo -->
+            <div class="form-title justify-content-center text-center margin-26">
+              <label for="" class="text-center Redondo bordes" id="experiencia_trabajo"><b>4) Experiencia de trabajo</b></label>
+            </div>
+            <div class="card table-responsive" style="padding: 2%; background-color: #f2f2f2;">
+              <div class="form-group col-lg-12 col-md-12" id="trabajo_actual">
+                <div class="row">
+                    <div id="Independiente" >
+                    <h6 class="text-center"><b>TRABAJO ACTUAL</b></h6>
+                    <div class="row">
+                      <div class="col-sm-12 form-group col-md-12 col-lg-6">
+                        <label for="nombreCompleto" class="label_direccion_tra ">Dirección de trabajo: </label>
+                        <input type="text" class="form-control labelTrabajo" id="direccion" name="direccion_tra" maxlength="128" placeholder="Dirección" disabled required>
+
+                      </div>
+                      <div class="form-group col-md-12 col-lg-12 col-sm-12">
+                        <label for="nombreCompleto" class="label_barrio_tra">Barrio: </label>
+                        <input type="text" class="form-control labelBarrio" id="barrio_tra" maxlength="128" placeholder="Barrio" disabled required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="edadEncuestado" class="label_actividad_tra">Oficio o actividad: </label>
+                      <input type="text" class="form-control labelActividad" id="actividad_tra" placeholder="actividad" maxlength="25" disabled required/>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <label for="edadEncuestado" class="label_ingreso_tra">Ingreso mensual aproximado: </label>
+                        <input type="text" class="form-control labelIngreso" id="ingreso_tra" placeholder="Ingreso" maxlength="25" disabled required/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                        <label for="idIdentificacion" class="label_date_tra">Fecha de inicio de esta actividad: </label>
+                        <input type="date" id="date_tra" class="form-control labelDate" placeholder="Fecha" maxlength="15" disabled required/>
+                      </div>
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                        <label for="telefono" class="label_horario_tra">Horario de trabajo: </label>
+                        <input type="text" class="form-control labelHorario" id="horario_tra" placeholder="Horario" maxlength="12" disabled required/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <label for="edadEncuestado">Nombre del jefe inmediato o contratista si aplica:  </label>
+                        <input type="text" class="form-control labelJefe" id="jefe_tra" placeholder="Nombre" maxlength="25" disabled required/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                        <label for="idIdentificacion" class="label_jefe_tra">Teléfono: </label>
+                        <input type="number" id="jefe_numero_trabajo"  class="form-control labelJefe_numero" placeholder="Telefono" maxlength="15" disabled required/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                        <label for="edadEncuestado" class="label_sisben">Fecha de afiliación al SISBEN : </label>
+                        <input type="date" class="form-control labelSisben" id="sisben" placeholder="Fecha" maxlength="25" disabled required/>
+                      </div>
+                      <div class="form-group col-sm-12 col-md-12 col-lg-6">
+                        <label for="tipoAtencion" class="label_categoria_sis" >Categoría: </label>
+                        <input type="text" class="form-control labelSisben_categoria" id="categoria_sis" placeholder="Categoria"disabled required/>
+                      </div>
+                    </div>
+                    </div>
+                    <div id="empleador" class="d-none">
+                      <h6 class="text-center"><b>TRABAJO ACTUAL</b></h6>
+                      <div class="row">
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto">Nombre: </label>
+                          <input type="text" class="form-control" id="nombreContract" maxlength="128" placeholder="Nombre" disabled required>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto">Cédula: </label>
+                          <input type="text" class="form-control" id="cedulaContract" maxlength="128" placeholder="Cédula" disabled required>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-4">
+                          <label for="nombreCompleto">Telefono: </label>
+                          <input type="text" class="form-control" id="celContract" maxlength="128" placeholder="Telefono" disabled required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12 col-lg-6">
+                          <label for="nombreCompleto">Nombre de la empresa : </label>
+                          <input type="text" class="form-control" id="empresaContract" maxlength="128" placeholder="Nombre de la empresa " required>
+                        </div>
+                        <div class="form-group col-md-12 col-lg-6">
+                          <label for="nombreCompleto">Cargo : </label>
+                          <input type="text" class="form-control" id="cargoContract" maxlength="128" placeholder="Cargo" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12 col-lg-12">
+                          <label for="edadEncuestado">Salario : </label>
+                          <input type="text" class="form-control" id="salarioContract" placeholder="$" maxlength="25" required/>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12 col-lg-12">
+                          <label for="edadEncuestado">Fecha de inicio :</label>
+                          <input type="date" class="form-control" id="fechaInicialContract" placeholder="Fecha" maxlength="25" required/>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12 col-lg-12">
+                          <label for="edadEncuestado">A que caja de Compensación esta afiliado: </label>
+                          <input type="text" class="form-control" id="CajaComContract" placeholder="Caja de Compensación" maxlength="25" required/>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="form-group col-lg-12 col-md-12">
+                <div class="row">
+                  <h6 class="text-center"><b>TRABAJO ANTERIOR</b></h6>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-6">
+                    <label for="nombreCompleto" class="label_anterior_dire">Dirección del sitio de trabajo: </label>
+                    <input type="text" class="form-control labelAnteriorDire" id="anterior_dire" maxlength="128" placeholder="Dirección" disabled required>
+                  </div>
+                  <div class="form-group col-md-12 col-lg-6">
+                    <label for="nombreCompleto" class="label_anterior_barrio_">Barrio: </label>
+                    <input type="text" class="form-control labelAnteriorBarrio " id="anterior_barrio" maxlength="128" placeholder="Barrio" disabled required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="edadEncuestado" class="label_anterior_actividad_">Oficio o actividad: </label>
+                  <input type="text" class="form-control labelAnteriorActividad" id="anterior_actividad" placeholder="actividad" maxlength="25" disabled required/>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-12">
+                    <label for="edadEncuestado" class="label_anterior_salario_">Ingreso mensual aproximado: </label>
+                    <input type="text" class="form-control labelAnteriorSalario" id="anterior_salario_" placeholder="Ingreso" maxlength="25" disabled required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-12">
+                    <label for="idIdentificacion" class="label_anterior_date_">Fecha de inicio de esta actividad: </label>
+                    <input type="date" id="anterior_date_" class="form-control labelAnteriorDate" placeholder="Fecha" maxlength="15" disabled required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-12">
+                    <label for="telefono" class="label_anterior_horario_">Horario de trabajo: </label>
+                    <input type="time" class="form-control labelAnteriorHorario" id="anterior_horario_" placeholder="Horario" maxlength="12" disabled required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-12">
+                    <label for="edadEncuestado" class="label_anterior_jefe_">Nombre del jefe inmediato o contratista (si aplica):  </label>
+                    <input type="text" class="form-control labelAnteriorJefe" id="anterior_jefe_" placeholder="Nombre" maxlength="25" disabled required/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12 col-lg-12">
+                    <label for="idIdentificacion" class="label_anterior_jefe_telefono_">Teléfono: </label>
+                    <input type="number" id="anterior_jefe_telefono_" class="form-control labelAnteriorJefe_numero" placeholder="Telefono" maxlength="15" disabled required/>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- conyuge experiencia  -->
+            <div  id="tablaConyuge">
+              <div class="form-container">
+                <div class="form-title justify-content-center text-center margin-26">
+                  <label class="Redondo bordes"><b>Actividad laboral actual del cónyuge</b></label>
+                </div>
+              </div>
+              <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+              <div class="row">
+                <div class="form-group col-md-6 col-lg-4">
+                  <label for="nombreCompleto" class="label_nombre_cony">Nombre: </label>
+                  <input type="text" class="form-control" id="nombre_cony" maxlength="128" placeholder="Nombre" disabled required>
+                </div>
+                <div class="form-group col-md-6 col-lg-4">
+                  <label for="nombreCompleto" class="label_cedula_cony">Cédula: </label>
+                  <input type="text" class="form-control" id="cedula_cony" maxlength="128" placeholder="Cédula" disabled required>
+                </div>
+                <div class="form-group col-md-12 col-lg-4">
+                  <label for="nombreCompleto" class="label_telefono_cony">Teléfono: </label>
+                  <input type="text" class="form-control" id="telefono_cony" maxlength="128" placeholder="Telefono" disabled required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="nombreCompleto" class="label_tipo_trabajo">Trabajo </label>
+                  <select class="form-control custom-select" id="tipoUsuario_cony">
+                    <option value="Independiente">Independiente</option>
+                    <option value="Empleado">Empleado</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="nombreCompleto" class="label_empresa_cony">Nombre de la empresa (si aplica): </label>
+                  <input type="text" class="form-control" id="empresa_cony" maxlength="128" placeholder="Nombre de la empresa" disabled required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="nombreCompleto" class="label_direccion_cony">Dirección del sitio de trabajo: </label>
+                  <input type="text" class="form-control" id="direccion_cony" maxlength="128" placeholder="Dirección del sitio de trabajo" disabled required>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="nombreCompleto" class="label_barrio_cony">Barrio: </label>
+                  <input type="text" class="form-control" id="barrio_cony" maxlength="128" placeholder="Barrio" disabled required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12 col-lg-4">
+                  <label for="edadEncuestado" class="label_actividad_cony">Oficio o actividad: </label>
+                  <input type="text" class="form-control" id="actividad_cony" placeholder="actividad" maxlength="25" disabled required/>
+                </div>
+                <div class="form-group col-md-12 col-lg-4">
+                  <label for="edadEncuestado" class="label_actividad_cony">Cargo: </label>
+                  <input type="text" class="form-control" id="cargo_cony" placeholder="Cargo" maxlength="25" disabled required/>
+                </div>
+                <div class="form-group col-md-12 col-lg-4">
+                  <label for="edadEncuestado" class="label_mensual_cony">Salario: </label>
+                  <input type="text" class="form-control" id="mensual_cony" placeholder="Ingreso" maxlength="25" disabled required/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="idIdentificacion" class="label_date_cony">Fecha de inicio de esta actividad: </label>
+                  <input type="date" id="date_cony" class="form-control" placeholder="Fecha" maxlength="15" disabled required/>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="telefono" class="label_horario_cony">Horario de trabajo: </label>
+                  <input type="time" class="form-control" id="horario_cony" placeholder="Horario" maxlength="12" disabled required/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="edadEncuestado" class="label_jefe_cony">Nombre del jefe inmediato o contratista :  </label>
+                  <input type="text" class="form-control" id="jefe_cony" placeholder="Nombre" maxlength="25" disabled required/>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                  <label for="idIdentificacion" class="label_jefe_num_cony">A que caja de Compensación esta afiliado (si aplica):  </label>
+                  <input type="number" id="jefe_num_cony" class="form-control" placeholder="Caja de Compensación" maxlength="15" disabled required/>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- vivienda que ocupa actualmente -->
+            <div class="form-title justify-content-center text-center margin-26" >
+            <label for="" class="text-center Redondo bordes" id="experiencia_trabajo"><b>5) Vivienda que ocupa actualmente</b></label>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-12 col-md-12" id="trabajo_actual">
+                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                    <div id="datos_gnvivienda" >
+                        <h6 class="text-center"><b>DATOS GENERALES DE LA VIVIENDA</b></h6>
+                        <table id="documentos" class="form-group table table-bordered table-responsive">
+                          <tbody><tr class="text-center">
+                            <th scope="col" style="background-color:#87d477 ;"><b>Datos</b></th>
+                            <th scope="col" style="background-color: #c0e4f7;"><b>Respuesta</b></th>
+                          </tr>
+                          </tbody><tbody id="body-documentos">
+                            <tr>
+                              <td><b>a).</b> Dirección</td>
+                              <td class="text-center"><label id="pr_a1"></label></td>
+                            </tr>
+                            <tr>
+                              <td><b>b).</b>Télefono</td>
+                              <td class="text-center"><label for="" id="pr_b">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>c).</b> ¿Pertenece a un familiar?</td>
+                              <td class="text-center"><label for="" id="pr_c">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>d).</b> ¿Parentesco?</td>
+                              <td class="text-center"><label for="" id="pr_d">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>e).</b>Cuántas personas habitan el inmueble </td>
+                              <td class="text-center"><label for="" id="pr_e">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>f).</b> Nombre de quien le arrendo</td>
+                              <td class="text-center"><label for="" id="pr_f">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>g).</b>Télefono</td>
+                              <td class="text-center"><label for="" id="pr_g">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>h).</b>Valor del arriendo</td>
+                              <td class="text-center"><label for="" id="pr_h">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>i).</b>Hace cuanto tiempo viven en este lugar</td>
+                              <td class="text-center"> <label for="" id="pr_i">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>j).</b> Estrato</td>
+                              <td class="text-center"><label for="" id="pr_j">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>k).</b> Tipo de vivienda </td>
+                              <td class="text-center"><label for="" id="pr_k">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>l).</b> Cuántas piezas</td>
+                              <td class="text-center"><label for="" id="pr_l">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>m).</b> ¿Baño compartido?</td>
+                              <td class="text-center"><label for="" id="pr_l">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>n).</b> ¿Cocina compartida?</td>
+                              <td class="text-center"><label for="" id="pr_l">No</label></td>
+                            </tr>
+                            <tr>
+                              <td><b>ñ).</b> ¿Patio compartido?</td>
+                              <td class="text-center"><label for="" id="pr_l">No</label></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12 col-md-12">
+                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                  <h6 class="text-center"><b>SERVICIOS</b></h6>
+                  <table id="documentos" class="form-group table table-bordered table-responsive ">
+                    <tbody><tr class="text-center">
+                      <th scope="col" style="background-color:#87d477 ;"><b>Servicio</b></th>
+                      <th scope="col" style="background-color: #c0e4f7;"><b>¿Lo tiene?</b></th>
+                      <th scope="col" style="background-color: #c0e4f7;"><b>$</b></th>
+                    </tr>
+                    </tbody><tbody id="body-documentos">
+                      <tr>
+                        <td><b>Agua</b></td>
+                        <td class="text-center"><label id="pr_a">No</label></td>
+                        <td class="text-center"><label id="valor"></label></td>
+                      </tr>
+                      <tr>
+                        <td><b>Luz</b></td>
+                        <td class="text-center"><label for="" id="pr_b">No</label></td>
+                        <td class="text-center"><label id="valor"></label></td>
+                      </tr>
+                      <tr>
+                        <td><b>Gas natural</b></td>
+                        <td class="text-center"><label for="" id="pr_c">No</label></td>
+                        <td class="text-center"><label id="valor"></label></td>
+                      </tr>
+                      <tr>
+                        <td><b>Teléfono</b></td>
+                        <td class="text-center"><label for="" id="pr_d">No</label></td>
+                        <td class="text-center"><label id="valor"></label></td>
+                      </tr>
+                      <tr>
+                        <td><b>Administración</b></td>
+                        <td class="text-center"><label for="" id="pr_e">No</label></td>
+                        <td class="text-center"><label id="valor"></label></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="form-group col-lg-12 col-md-12">
+                <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                  <h6 class="text-center"><b>MUEBLES Y EQUIPOS</b></h6>
+                  <div>
+                    <div class="row p-4">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="Television_si" >
+                        <label class="form-check-label" for="flexCheckDefault" id="label_Television_si">Televisión</label>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="sonido_si">
+                        <label class="form-check-label" for="flexCheckChecked" id="label_sonido_si">Equipo de sonido</label>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="Grabadora_si" >
+                        <label class="form-check-label" for="flexCheckChecked" id="label_Grabadora_si">Grabadora</label>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="Computador_si" >
+                        <label class="form-check-label" for="flexCheckChecked" id="label_Computador_si">Computador</label>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="Lavadora_si" >
+                        <label class="form-check-label" for="flexCheckChecked" id="label_Lavadora_si">Lavadora</label>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center form-switch">
+                        <input class="form-check-input" type="checkbox" value="1" id="Nevera_si" >
+                        <label class="form-check-label" for="flexCheckChecked" id="label_Nevera_si">Nevera</label>
+                      </div>
+                    </div>
+                    <div class="row py-1">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <label class="col-form-label" id="label_otros_campo">Otros</label>
+                      </div>
+                      <div class="form-group col-lg-8 col-md-6 col-sm-12 d-flex align-items-center">
+                        <input type="text" class="form-control" id="otros_campo" maxlength="128" placeholder=" " disabled required>
+                      </div>
+                    </div>
+                    <div class="row py-1">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <label class="col-form-label" id="label_muebles_sal">Muebles que tiene en la sala</label>
+                      </div>
+                      <div class="form-group col-lg-8 col-md-6 col-sm-12 d-flex align-items-center2">
+                        <input type="text" class="form-control" id="muebles_sal" maxlength="128" placeholder=" " disabled required>
+                      </div>
+                    </div>
+                    <div class="row py-1">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <label class="col-form-label" id="label_muebles_com">Muebles que tiene en el comedor</label>
+                      </div>
+                      <div class="form-group col-lg-8 col-md-6 col-sm-12 d-flex align-items-center2">
+                        <input type="text" class="form-control" id="muebles_com" maxlength="128" placeholder=" " disabled required>
+                      </div>
+                    </div>
+                    <div class="row py-1">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <label class="col-form-label" id="label_muebles_alco">Muebles que tiene en las alcobas</label>
+                      </div>
+                      <div class="form-group col-lg-8 col-md-6 col-sm-12 d-flex align-items-center2">
+                        <input type="text" class="form-control" id="muebles_alco" maxlength="128" placeholder=" " disabled required>
+                      </div>
+                    </div>
+                    <div class="row py-1">
+                      <div class="form-group col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <label class="col-form-label" id="label_otros_lugares">En otros lugares</label>
+                      </div>
+                      <div class="form-group col-lg-8 col-md-6 col-sm-12 d-flex align-items-center2">
+                        <input type="text" class="form-control" id="otros_lugares" maxlength="128" placeholder=" " disabled required>
+                      </div>
+                    </div>
+                    <div class="form-title p-1">
+                      <label id="label_situacion_especial"><b>Sitaciones especiales en la familia:</b></label>
+                    </div>     
+                    <div class="row py-1">
+                      <div class="form-group d-flex align-items-center">
+                        <textarea class="form-control" id="situacion_especial" rows="2"></textarea>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            <!-- vivienda anterior si aplica -->
+            <div class="row margin-26" id="vivienda_anterior">
+              <div class="form-group col-lg-12 col-md-12">
+                <div>
+                  <br>
+                  <label for="" class="text-center Redondo bordes" id="experiencia_trabajo"><b>6) Vivienda anterior</b></label>
+                  <br>
+                  <div class="row">
+                    <div class="form-group col-lg-12 col-md-12" id="trabajo_actual">
+                      <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                          <div id="datos_gnvivienda" >
+                              <h6 class="text-center"><b>DATOS GENERALES DE LA VIVIENDA</b></h6>
+                              <table id="documentos" class="form-group table table-bordered table-responsive">
+                                <tbody><tr class="text-center">
+                                  <th scope="col" style="background-color:#87d477 ;"><b>Datos</b></th>
+                                  <th scope="col" style="background-color: #c0e4f7;"><b>Respuesta</b></th>
+                                </tr>
+                                </tbody><tbody id="body-documentos">
+                                  <tr>
+                                    <td><b>a).</b> Dirección</td>
+                                    <td class="text-center"><label id="pr_a">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>b).</b>Télefono</td>
+                                    <td class="text-center"><label for="" id="pr_b">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>c).</b> Nombre de quién le arrendó :</td>
+                                    <td class="text-center"><label for="" id="pr_c">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>d).</b> Teléfono :</td>
+                                    <td class="text-center"><label for="" id="pr_d">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>e).</b>Valor del arriendo :</td>
+                                    <td class="text-center"><label for="" id="pr_e">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>f).</b> Cuántas personas la habitaron:</td>
+                                    <td class="text-center"><label for="" id="pr_f">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>g).</b>Cuanto tiempo vivieron en este lugar :</td>
+                                    <td class="text-center"><label for="" id="pr_g">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>h).</b>Estrato :</td>
+                                    <td class="text-center"><label for="" id="pr_h">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>i).</b>Tipo de vivienda:</td>
+                                    <td class="text-center"> <label for="" id="pr_i">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>j).</b> Cuántas piezas</td>
+                                    <td class="text-center"><label for="" id="pr_j">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>k).</b> ¿Baño compartido?</td>
+                                    <td class="text-center"><label for="" id="pr_k">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>l).</b> ¿Cocina compartida?</td>
+                                    <td class="text-center"><label for="" id="pr_l">No</label></td>
+                                  </tr>
+                                  <tr>
+                                    <td><b>m).</b>¿Patio?</td>
+                                    <td class="text-center"><label for="" id="pr_l">No</label></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-lg-12 col-md-12">
+                      <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+                        <h6 class="text-center"><b>SERVICIOS QUE COMPARTIERON</b></h6>
+                        <table id="documentos" class="form-group table table-bordered table-responsive ">
+                          <tbody><tr class="text-center">
+                            <th scope="col" style="background-color:#87d477 ;"><b>Servicio</b></th>
+                            <th scope="col" style="background-color: #c0e4f7;"><b>¿Lo tiene?</b></th>
+                            <th scope="col" style="background-color: #c0e4f7;"><b>$</b></th>
+                          </tr>
+                          </tbody><tbody id="body-documentos">
+                            <tr>
+                              <td><b>Agua</b></td>
+                              <td class="text-center"><label id="pr_a">No</label></td>
+                              <td class="text-center"><label id="valor"></label></td>
+                            </tr>
+                            <tr>
+                              <td><b>Luz</b></td>
+                              <td class="text-center"><label for="" id="pr_b">No</label></td>
+                              <td class="text-center"><label id="valor"></label></td>
+                            </tr>
+                            <tr>
+                              <td><b>Gas natural</b></td>
+                              <td class="text-center"><label for="" id="pr_c">No</label></td>
+                              <td class="text-center"><label id="valor"></label></td>
+                            </tr>
+                            <tr>
+                              <td><b>Teléfono</b></td>
+                              <td class="text-center"><label for="" id="pr_d">No</label></td>
+                              <td class="text-center"><label id="valor"></label></td>
+                            </tr>
+                            <tr>
+                              <td><b>Administración</b></td>
+                              <td class="text-center"><label for="" id="pr_e">No</label></td>
+                              <td class="text-center"><label id="valor"></label></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+      <!-- ESPACIO PARA EL PDF  -->
+       <div class="form-group card rounded col-lg-5 col-md-6 table-responsive border-primary" style="height: 745px;">
+        <div id="content" class="bg-default pdfobject-container" style="height: 1004px; overflow: hidden;">
+          <embed class="pdfobject" src="documentos/10002/agudelo_gabriela.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card-footer text-muted" style="background-color: #EFC714;">
+  <br>
+  <button type='button' id="btnrefresh" class='btn' style="background-color: #004aad; color: white;" >regresar</button>
+</div>
+</div>
+
+
+

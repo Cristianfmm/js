@@ -1,0 +1,227 @@
+<div class="card">
+  <div class="card-header" style="background-color: #EFC714;" >
+    <div class="row p-2"><label><b> FORMULARIO SF.F.4.1A</b></label></div>
+    <div class="row p-2" ><label id="nombre_3" style="text-align: center;"></label></div>
+  </div>
+  <div class="card-body">
+    <div class="card-body" id="tableA2">
+      <div class="form-container">
+        <div class="form-title">
+          <label class="Redondo bordes"><b>INFORMACIÓN GENERAL</b></label>
+        </div>
+<!-- desde aqui -->
+      <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" id="label_nombre_arrendador">Nombre de quién le arrendó: </label>
+            <input type="text" class="form-control labelTrabajo" id="nombre_arrendador"  maxlength="128" placeholder="Nombre" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-6">
+            <label for="nombreCompleto" id="label_telefono_arrendador">Teléfono: </label>
+            <input type="text" class="form-control labelBarrio" id="telefono_arrendador" maxlength="128" placeholder="Teléfono" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto" class="label_direccion_tra ">Dirección: </label>
+            <input type="text" class="form-control labelTrabajo" id="direccion_tra"  maxlength="128" placeholder="Dirección" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto" class="label_barrio_tra">Barrio: </label>
+            <input type="text" class="form-control labelBarrio" id="barrio_tra" maxlength="128" placeholder="Barrio" required>
+          </div>
+          <div class="form-group col-md-12 col-lg-4">
+            <label for="nombreCompleto" class="label_valorArriendo">Valor del arriendo $: </label>
+            <input type="text" class="form-control labelBarrio" id="valorArriendo" maxlength="128" placeholder="Valor" required>
+          </div>
+        </div>
+        <div style="justify-content: start;">
+          <br>
+          <p style="justify-content: start;">
+            <b>Nota: Verificar que es cierta la información registrada en el SF.F.3C.  Tomar dos fotos en ambientes diferentes con las personas presentes, previa autorización del arrendador.  </b>
+          </p>
+          <br>
+        </div>
+      </div>
+      <!-- hasta aqui -->
+        <div class="form-title">
+          <label class="Redondo bordes"><b>TIPO DE VIVIENDA</b></label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;">
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_tipo_vivienda">Tipo vivienda : </label>
+              <input type="text" class="form-control labelTrabajo" id="tipo_vivienda"  maxlength="128" placeholder="Tipo vivienda" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" class="label_cuantasPiezas" id="label_cuantasPiezas">Cuántas piezas tiene la vivienda señalada: </label>
+              <input type="text" class="form-control labelBarrio" id="cuantasPiezas" maxlength="128" placeholder="Cuántas piezas tiene la vivienda" required>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_piezasFamilia">Cuántas piezas habitó la familia : </label>
+              <input type="text" class="form-control" id="piezasFamilia" maxlength="128" placeholder="Cuántas piezas habitó " required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto"  id="label_bañoNo"><b>BAÑO COMPARTIDO</b></label>
+                  <input type="radio" class="btn-check " name="bañoSi" id="bañoSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="bañoSi">SI</label>
+                  <input type="radio" class="btn-check " name="bañoNo" id="bañoNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="bañoNo">NO</label>
+              </div>
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto" id="label_cocinaNo"><b>COCINA COMPARTIDA</b></label>
+                  <input type="radio" class="btn-check " name="cocinaSi" id="cocinaSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="cocinaSi">SI</label>
+                  <input type="radio" class="btn-check " name="cocinaNo" id="cocinaNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="cocinaNo">NO</label>
+              </div>
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto" id="label_patioSi"><b>PATIO COMPARTIDO</b></label>
+                  <input type="radio" class="btn-check " name="patioSi" id="patioSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="patioSi">SI</label>
+                  <input type="radio" class="btn-check " name="patioNo" id="patioNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="patioNo">NO</label>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label for="nombreCompleto" class="label_barrio_tra Redondo bordes"><b>Material paredes :</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <select class="form-control" id="medio">
+                <option data-val="Casa">Bloque </option>
+                <option data-val="Ladrillo ">Ladrillo </option>
+                <option data-val="Prefabricada ">Prefabricada </option>
+                <option data-val="Madera ">Madera</option>
+                <option data-val="Latas ">Latas </option>
+                <option data-val="Carton">Cartón  </option>
+                <option data-val="Adobe">Adobe</option>
+                <option data-val="Otros">Otros</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label for="nombreCompleto" class="label_barrio_tra Redondo bordes"><b>Material pisos : </b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <select class="form-control" id="medio">
+                <option data-val="Tierra">Tierra </option>
+                <option data-val="Cemento">Cemento</option>
+                <option data-val="Tabla">Tabla</option>
+                <option data-val="Baldosa">Baldosa</option>
+                <option data-val="Alfombra">Alfombra</option>
+                <option data-val="Caucho">Caucho</option>
+                <option data-val="Alfombra">Otros</option>
+              </select>
+            </div>
+          </div>
+          <br>
+            <div class="row">
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto" id="label_aseoParedes"><b>Aseo paredes :</b></label>
+                <select class="form-control" id="aseoParedes"></select>
+              </div>
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto" id="label_aseoPisos"><b>Aseo pisos :</b></label>
+                <select class="form-control" id="aseoPisos"></select>
+              </div>
+              <div class="form-group col-md-12 col-lg-4">
+                <label for="nombreCompleto" id="label_aseogeneral"><b>Aseo y orden general :</b></label>
+                <select class="form-control" id="aseogeneral"></select>
+              </div>
+          </div>
+        </div>
+          <div class="form-title">
+            <label class="Redondo bordes"><b>SERVICIOS QUE COMPARTÍAN</b></label>
+          </div>
+          <div class="card" style="padding: 2%; background-color: #f2f2f2;" >
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_aguaSi"><b>AGUA</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="radio" class="btn-check " name="aguaSi" id="aguaSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="aguaSi">SI</label>
+              <input type="radio" class="btn-check " name="aguaNo" id="aguaNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="aguaNo">NO</label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="number" class="form-control labelBarrio" id="Aguainput" maxlength="128" placeholder="Valor" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_luzSi"><b>LUZ</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="radio" class="btn-check " name="luzSi" id="luzSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="luzSi">SI</label>
+              <input type="radio" class="btn-check " name="luzNo" id="luzNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="luzNo">NO</label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="number" class="form-control labelBarrio" id="luzInput" maxlength="128" placeholder="Valor" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_gasSi"><b>GAS NATURAL</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="radio" class="btn-check " name="gasSi" id="gasSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="gasSi">SI</label>
+              <input type="radio" class="btn-check " name="gasNo" id="gasNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="gasNo">NO</label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="number" class="form-control" id="inputGas" maxlength="128" placeholder="Valor" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4">
+              <label for="nombreCompleto" id="label_telefonoSi"><b>TELEFONO</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="radio" class="btn-check " name="telefonoSi" id="telefonoSi" value="SI" autocomplete="off" /><label class="btn btn-outline-success checklist" data-val = "SI" for="telefonoSi">SI</label>
+              <input type="radio" class="btn-check " name="telefonoNo" id="telefonoNo" value="NO" autocomplete="off" /><label class="btn btn-outline-danger checklist" data-val = "NO"  for="telefonoNo">NO</label>
+            </div>
+            <div class="form-group col-md-12 col-lg-4">
+              <input type="number" class="form-control" id="inputTelefono" maxlength="128" placeholder="Valor" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-title">
+          <label class="Redondo bordes"><b>CONCEPTOS</b></label>
+        </div>
+        <div class="card" style="padding: 2%; background-color: #f2f2f2;" >
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label id="label_obs"><b>Obs. T.S. </b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="input_obs" rows="2"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label id="conceptoFamilia"><b>Concepto de la familia emitido por la dueña(o) o persona que atendió: </b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="inputconceptoFamilia" rows="2"></textarea>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group col-md-12 col-lg-4 d-flex align-items-center justify-content-center">
+              <label id="ComentarioVecinos"><b>Nombres y comentarios de los vecinos</b></label>
+            </div>
+            <div class="form-group col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+              <textarea class="form-control margin" id="InputComentarioVecinos" rows="2"></textarea>
+            </div>
+          </div> 
+        </div>     
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted" style="background-color: #EFC714;">
+    <br>
+  </div>
+</div>
